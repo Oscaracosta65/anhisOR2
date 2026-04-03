@@ -1768,7 +1768,7 @@ table.skai-table tbody tr:hover{
       <form name="fqsearch" method="post" action="/all-us-lotteries/results-analysis?st=<?php echo htmlspecialchars((string) $stateAbrev, ENT_QUOTES, 'UTF-8'); ?>&amp;stn=<?php echo htmlspecialchars((string) $stateName, ENT_QUOTES, 'UTF-8'); ?>&amp;gm=<?php echo htmlspecialchars((string) $gName, ENT_QUOTES, 'UTF-8'); ?>#tables">
         <div class="skai-controls-row">
           <div class="skai-controls-left">
-            <label for="nod">Draw window (drawings to analyse)</label>
+            <label for="nod">Draw window (number of drawings to analyze)</label>
             <select name="nod" id="nod" class="skai-select">
               <?php foreach (range(10, 700, 5) as $opt) : ?>
                 <option value="<?php echo (int) $opt; ?>"<?php echo ((int) $opt === (int) $nodCurrentMain) ? ' selected="selected"' : ''; ?>>
